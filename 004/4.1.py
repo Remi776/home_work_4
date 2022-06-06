@@ -15,10 +15,10 @@ def GetPolynomial(n):
 n_1 = int(input('Enter the value of the degree for the first polynomial: '))
 n_2 = int(input('Enter the value of the degree for the second polynomial: '))
 
-with open('Polynominal_1.txt', 'w+') as data_1:
+with open('Polynominal_1.txt', 'w+') as data_1, open('Polynominal_2.txt', 'w+') as data_2:
     data_1.write((GetPolynomial(n_1)))
-
-with open('Polynominal_2.txt', 'w+') as data_2:
     data_2.write((GetPolynomial(n_2)))
+
+
 
 
